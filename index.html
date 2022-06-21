@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Games</title>
+</head>
+<body>
+
+<div class="hederBlock center">
+    <h1 class="hederBlock_header">Добро пожаловать на мой сайт !</h1>
+    <p class="hederBlock_text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
+    <a class="button_link" href="#games"><button class="hederBlock_button">Поехали!</button></a>
+</div>
+
+<div id="games" class="menuBlock center">
+    <div class="menuBox game_1"><p class="game_title">Игра 1</p></div>
+    <div class="menuBox game_2"><p class="game_title">Игра 2</p></div>
+    <div class="menuBox game_3"><p class="game_title">Игра 3</p></div>
+</div>
+    
+<!-- modal 1-->
+<div class="modal_wrap modal_1">
+    <div class="modal_hover"><p class="cross">&#215;</p></div>
+    <div class="modal_box modal_box_1 modal_open_animation">
+       <h2>Анаграмма</h2>
+       <div class="form">
+            <input placeholder="Первое слово" autocomplete="off" class="input" name="first_word" type="text">
+            <input placeholder="Второе слово" autocomplete="off" class="input" name="second_word" type="text">
+            <button class="button_game_1 button">Погнали!</button>
+            
+       </div>
+       <p class="errorLine"></p>
+    </div>
+</div>
+
+<!-- modal 2-->
+<div class="modal_wrap modal_2">
+    <div class="modal_hover"><p class="cross">&#215;</p></div>
+    <div class="modal_box modal_open_animation">
+       <h2>Камень, ножницы, бумага</h2>
+       <div class="form form_2">
+            <div class="input_1_wrap input_wrap"><input id="stone" class="input input_2" name="item" type="radio"><label for="stone">Камень</label></div>
+            <div class="input_2_wrap input_wrap"><input id="scissors" class="input input_2" name="item" type="radio"><label for="scissors">Ножницы</label></div>
+            <div class="input_3_wrap input_wrap"><input id="paper" class="input input_2" name="item" type="radio"><label for="paper">Бумага</label></div>
+       </div>
+       <button class="button_game_2 button">Погнали!</button>
+       <p class="player"></p>
+       <p class="comp"></p>
+       <p class="errorLine2"></p>
+    </div>
+</div>
+
+<!-- modal 3-->
+<div class="modal_wrap modal_3">
+    <div class="modal_hover"><p class="cross">&#215;</p></div>
+    <div class="modal_box modal_box_3 modal_open_animation">
+       <h2>Загадка</h2>
+       <h3 class="mystery">Ах, не трогайте меня:<br>
+        Обожгу и без огня!</h3>
+       <div class="form form_last">
+            <input placeholder="Ответ" autocomplete="off" class="input" name="user_answer" id="user_answer" type="text">
+            <button class="button_game_3 button">Погнали!</button>
+            
+       </div>
+       <p class="errorLine3"></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
